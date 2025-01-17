@@ -1,43 +1,63 @@
+/* Reset and Body Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
     background-color: #f4f4f9;
+    color: #333;
 }
 
-header {
-    background: #0044cc;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+/* Top-Left Header Styling */
+header.top-left {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.profile-container {
+    display: flex;
+    align-items: flex-start;
 }
 
-header p {
-    font-size: 1.2em;
+.profile-photo {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-right: 20px;
 }
 
-nav {
-    margin-top: 10px;
+.profile-info {
+    max-width: 600px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
+.profile-info h1 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #000;
+}
+
+.profile-info p {
+    margin: 5px 0;
     font-size: 1em;
+    line-height: 1.5;
 }
 
-nav a:hover {
+.profile-info a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
     text-decoration: underline;
 }
 
+/* Main Sections Styling */
 main {
     padding: 20px;
 }
@@ -53,6 +73,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Footer Styling */
 footer {
     background: #333;
     color: #fff;
